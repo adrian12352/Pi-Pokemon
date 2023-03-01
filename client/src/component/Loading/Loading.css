@@ -1,0 +1,52 @@
+.loading-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-center .pulse {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: hsl(193, 78%, 49%);
+  border-radius: 50%;
+}
+
+.pulse img {
+  width: 100px;
+  height: 100px;
+}
+
+.pulse span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  border: 1px solid hsl(193, 78%, 49%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+    /* opacity: 0; */
+  }
+}
+.pulse span:ntn-child(2) {
+  animation-delay: 1s;
+}
+
+.pulse span:ntn-child(3) {
+  animation-delay: 1.5s;
+}
+.pulse span:ntn-child(4) {
+  animation-delay: 1.78s;
+}

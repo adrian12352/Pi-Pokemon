@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: hsl(48, 100%, 51%);
+  background: hsl(209, 63%, 45%);
+  margin-top: 3rem;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 70px;
+}

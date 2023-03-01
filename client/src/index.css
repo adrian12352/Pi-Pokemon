@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 2rem; */
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  background-color: hsl(48, 100%, 51%);
+  color: hsl(209, 63%, 45%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.topButton {
+  position: fixed;
+  bottom: 2.1rem;
+  right: 2.1rem;
+}
+
+.topButton {
+  /* color: var(--text-color); */
+  /* background: var(--main-color); */
+  background-color: hsl(48, 100%, 74%);
+  height: 55px;
+  width: auto;
+  padding: 5px;
+  border-radius: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.topButton.appear {
+  opacity: 1;
+  bottom: 4.2rem;
+  pointer-events: auto;
+  cursor: pointer;
+}

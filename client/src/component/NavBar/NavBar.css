@@ -1,0 +1,61 @@
+.nav_container {
+  background: hsl(48, 100%, 51%);
+  background-size: cover;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 4%;
+  transition: 0.3s;
+}
+
+.nav_img {
+  height: 48px;
+  width: auto;
+}
+
+.navBtn {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border: 2px solid white;
+  border-radius: 1.5rem;
+  background: #2a75bb;
+  background-size: 400%;
+  color: hsl(48, 100%, 51%);
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 6px 14px -1px rgba(255, 255, 255, 0.51);
+  -webkit-box-shadow: 2px 6px 14px -1px rgba(255, 255, 255, 0.51);
+  -moz-box-shadow: 2px 6px 14px -1px rgba(255, 255, 255, 0.51);
+}
+
+.navBtn:hover::before {
+  transform: scaleX(1);
+}
+.navBtn_content {
+  font-size: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.navBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(95deg, #1bb4de 0%, #2a75bb 100%);
+
+  transition: all 0.5s ease-in-out;
+}

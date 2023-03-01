@@ -1,0 +1,78 @@
+.card {
+  padding: 12px 8px;
+  display: flex;
+  border: transparent;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px 4px rgb(255, 255, 255);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  background: hsl(209, 63%, 45%);
+
+  /*  */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: -1px -1px 7px 5px rgba(255, 255, 255);
+}
+
+.card-title {
+  font-size: 2.5rem;
+  color: hsl(48, 100%, 51%);
+  text-shadow: -1px 1px 3px hsl(193, 78%, 49%);
+  margin: 8px;
+}
+
+.card-img {
+  max-width: 150px;
+  height: 200px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.card-types {
+  color: rgb(228 180 34);
+  text-shadow: -1px 1px 1px hsl(193, 78%, 49%);
+  font-size: 1.5rem;
+  margin: 0%;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.027), lightyellow);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+  /* background: transparent; */
+  opacity: 0.6;
+}
+
+.layer img {
+  color: var(--main-color);
+  margin-top: 20px;
+  font-size: 20px;
+  background: var(--text-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.card:hover .layer {
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.container {
+  margin-top: 80px;
+}
+
+/* .listCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+} */
+
+.listCard {
+  margin: 40px 40px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  /* gap: 10px; */
+}

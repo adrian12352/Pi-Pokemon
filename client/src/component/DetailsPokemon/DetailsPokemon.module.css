@@ -1,0 +1,122 @@
+@font-face {
+  font-family: PokemonHollow;
+  src: url("../../font/PokemonHollow.ttf");
+}
+
+@font-face {
+  font-family: PokemonSolid;
+  src: url("../../font/PokemonSolid.ttf");
+}
+
+.containermaster {
+  padding-top: 100px;
+
+  background: rgb(235 147 21);
+  max-width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.title {
+  /* font-family: PokemonHollow; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.titledetail {
+  /* font-family: PokemonSolid; */
+  font-size: 3rem;
+  color: #ca1717;
+  text-shadow: -1px 2px 2px black;
+  margin: -3%;
+}
+.titlename {
+  /* font-family: PokemonSolid; */
+  font-size: 3rem;
+  color: #ca1717;
+  text-shadow: -3px 3px 2px black;
+
+  margin: -0%;
+}
+.titletype {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* font-size: x-large; */
+  /* font-family: PokemonSolid; */
+  color: rgb(202 23 23);
+  text-shadow: -2px 1px 3px rgb(255 255 255);
+}
+.titletypesnames {
+  /* font-family: PokemonSolid; */
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+.substat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 35vw;
+}
+
+.titleStat {
+  font-size: 3rem;
+  color: rgb(202 23 23);
+  text-shadow: -3px 2px 2px rgb(225 204 204);
+  text-align: center;
+}
+
+.titlesStats {
+  line-height: 1.8;
+  font-size: 2rem;
+  color: rgb(202 23 23);
+  text-shadow: -2px 1px 2px rgb(225 204 204);
+  text-align: center;
+}
+
+.titlesStats span {
+  /* font-family: PokemonSolid; */
+
+  color: rgb(120 46 46);
+}
+
+.img {
+  margin: 5px;
+}
+
+.img img {
+  width: 25vw;
+}
+
+.submit_btn {
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+.submit_btn input {
+  padding: 10px;
+  height: 100%;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #1bb4de);
+}
+.submit_btn input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #1bb4de);
+}

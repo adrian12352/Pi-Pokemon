@@ -1,0 +1,183 @@
+@font-face {
+  font-family: PokemonHollow;
+  src: url("../../font/PokemonHollow.ttf");
+}
+
+@font-face {
+  font-family: PokemonSolid;
+  src: url("../../font/PokemonSolid.ttf");
+}
+
+.error {
+  /* color: rgb(221, 22, 62); */
+  text-align: center;
+  width: 35vw;
+  height: 3vh;
+  font-size: large;
+  text-shadow: 0px 1px 4px white;
+}
+
+.containerAll {
+  padding: 40px 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: hsl(48, 100%, 51%);
+  max-width: 100vw;
+}
+
+.title {
+  /* font-family: PokemonHollow; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3rem;
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  color: hsl(209, 63%, 45%);
+  text-shadow: -2px 2px 2px rgb(255, 255, 255);
+}
+
+.contenedorForm {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Form {
+  padding: 80px 40px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border-radius: px; */
+  border: transparent;
+  background-color: #d331167a;
+  box-shadow: 0px 0px 52px -23px white;
+}
+
+.divLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.divRigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.insertInfo {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  width: 100%;
+  height: 80px;
+}
+
+.inputs {
+  right: 0;
+  border-radius: 7px;
+
+  width: 10vw;
+}
+
+.insertInfo label {
+  font-size: 2rem;
+  font-weight: bold;
+  /* font-family: PokemonSolid; */
+  color: hsl(209, 63%, 45%);
+  /* margin: -35px; */
+  left: 0;
+  text-shadow: -1px 1px 1px rgb(255, 255, 255);
+}
+
+.containerviewtypes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vw;
+  height: 10vh;
+}
+
+.viewtype {
+  text-shadow: -2px 3px 2px black;
+  display: flex;
+  /* font-family: PokemonSolid; */
+  border: transparent;
+  border-radius: 25px;
+  width: 9vw;
+  height: 6vh;
+  justify-content: space-evenly;
+  background: #e03d16;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: #b1cb16;
+}
+
+.bndelet {
+  color: rgb(255 164 164);
+  font-size: 98%;
+  border: transparent;
+  border-radius: 100%;
+  text-shadow: -1px 1px 4px black;
+  box-shadow: 0px 0px 3px black;
+  background: #ca1717;
+}
+
+.containterbnCreate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bnCreate {
+  background: rgb(202 23 23);
+  font-weight: bold;
+  display: flex;
+  width: 25vw;
+  height: 10vh;
+  border: transparent;
+  border-radius: 15px;
+  color: #eb9315;
+  /* font-family: PokemonSolid; */
+  justify-content: center;
+  text-shadow: -2px 1px 3px #000000;
+  align-items: center;
+  font-size: xx-large;
+  box-shadow: -2px 1px 3px 2px #883939;
+}
+
+.bnCreate:hover {
+  box-shadow: -1px 3px 17px 5px white;
+  text-shadow: -2px 2px 7px white;
+  color: rgba(30, 2, 2, 0.806);
+}
+
+.insertInfo input {
+  border: 3px solid #000;
+  border-radius: 5px;
+  height: 40px;
+  line-height: normal;
+  color: #282828;
+  display: block;
+  width: 200px;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+  outline: none;
+}
+
+.insertInfo input:focus {
+  border: 3px solid hsl(193, 78%, 49%);
+}
